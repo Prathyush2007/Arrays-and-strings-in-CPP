@@ -101,15 +101,126 @@ Average of elements: 4.33333
 ## 5. Code Name: Find Min and Max Element in an Array
 
 ### Theory:
-Finding the minimum and maximum values in a data set is one of the most frequent and useful tasks. This program uses comparisons inside a loop to track the smallest and largest values. It is essential in optimization problems, sorting algorithms, and performance evaluation. This builds the idea of value comparison logic which is critical in algorithm development.
+Finding the minimum and maximum values in a data set is one of the most frequent and useful tasks. This program uses comparisons inside a loop to track the smallest and largest values. It is essential in optimization problems, sorting Array and String Operations in C++
+Name: Prathyush Nimmagadda
+PRN: 24070123064
+Batch: ENTC A3
 
-### Algorithm:
-1. Input the number of elements (must be > 5).
-2. Read the array elements.
-3. Initialize `min` and `max` with the first element.
-4. Traverse the array to update `min` and `max`.
+1. Code: Array Input and Output
+Theory
+Arrays enable storage of multiple data items of the same type under one variable name. This exercise introduces indexing by letting the user enter seven integers, then displaying them via a loop. Mastering input/output with arrays is a base requirement for further operations like sorting, filtering, and aggregation in C++.
 
-### Output:
+Algorithm
+Declare an integer array of size 7.
+
+Use a loop to accept 7 integer inputs from the user.
+
+Use a second loop to print each value in sequence.
+
+Output
+text
+Enter 7 numbers:
+3
+2
+3
+2
+1
+4
+5
+You entered:
+3
+2
+3
+2
+1
+4
+5
+2. Code: Array Reversal
+Theory
+Reversing an array demonstrates in-place modification using the two-pointer technique. The program accepts a user-defined array, then swaps the first and last elements, working inward, to reverse the order. This method introduces the idea of direct memory manipulation—a foundation for many algorithmic solutions.
+
+Algorithm
+Input the total element count.
+
+Gather array data via loop.
+
+Swap elements from opposite ends, moving toward the center.
+
+Output the reversed array.
+
+Output
+text
+Please, enter the total no. you want to enter: 6
+Enter the element 1: 3
+Enter the element 2: 4
+Enter the element 3: 4
+Enter the element 4: 2
+Enter the element 5: 1
+Enter the element 6: 2
+
+Reverse all elements of the array:
+2 1 2 4 4 3
+3. Code: Linear Search in an Array
+Theory
+Searching within arrays is vital for quick data retrieval. This program illustrates linear search, where each element is checked for a match with the target. It demonstrates use of loop-based traversal, conditionals, and flags for indicating if an item has been found—a core method in early-stage problem solving.
+
+Algorithm
+Define a static array of elements.
+
+Prompt the user for a search value.
+
+Loop through the array, comparing each element to the search key.
+
+Inform the user of the key’s position if found, otherwise indicate it’s missing.
+
+Output
+text
+Enter the number you want to search for: 10
+Key found at location: 1
+4. Code: Sum and Average of Array Elements
+Theory
+This code segment demonstrates how to aggregate numerical data in arrays using a loop to sum values, then calculates the average. Type casting ensures precision in the average calculation. These basics are stepping stones for statistical analysis and computational algorithms.
+
+Algorithm
+Input how many elements will be entered.
+
+Store each input in an array.
+
+Loop through the array, summing the values.
+
+Calculate the average as a floating-point result.
+
+Print the sum and average.
+
+Output
+text
+Enter number of elements: 6
+Enter elements:
+3
+4
+5
+6
+7
+1
+Sum of elements: 26
+Average of elements: 4.33333
+5. Code: Finding Minimum and Maximum in an Array
+Theory
+Identifying the smallest and largest values in a collection is common in analytics and programmatic comparisons. This program loops through the array, continually comparing and updating the current minimum and maximum, instilling key comparison and assignment logic.
+
+Algorithm
+Input the quantity of elements (greater than 5).
+
+Read the elements into an array.
+
+Initialize min and max to the first array value.
+
+Traverse the array, updating min and max as needed.
+
+Print the final minimum and maximum.
+
+Output
+text
 Enter the number of elements): 6
 Enter 6 elements:
 7
@@ -120,72 +231,69 @@ Enter 6 elements:
 56
 Minimum element: 2
 Maximum element: 56
+6. Code: Accepting and Displaying a String (char Array)
+Theory
+This example shows input and output of character arrays—C-style strings. Input limits to single words when using cin, demonstrating basic handling of character data, how strings are mapped to memory, and the role of the null terminator (\0) in marking string end.
 
+Algorithm
+Define a character array.
 
-## 6. Code Name: Taking String as an Input and Displaying It
+Use input to fill the array with a string.
 
-### Theory:
-This program introduces character arrays and how to handle strings in C++ without using the `string` class. The use of `cin` restricts input to single-word strings (no spaces). It builds understanding of how strings are stored in memory as arrays of characters terminated by a null character `\0`. It's fundamental in understanding string I/O before moving to more advanced string manipulation techniques.
+Output the string as entered.
 
-### Algorithm:
-1. Declare a character array.
-2. Accept string input.
-3. Display the string.
-
-### Output:
+Output
+text
 Enter a string: lowercase
 You entered:lowercase
+7. Code: Reverse a String Manually
+Theory
+The program traverses a string backwards, demonstrating how to calculate string length with a loop, then use indices to display the reversed string. This logic is fundamental for more advanced text-processing techniques including recursion and buffer manipulation.
 
-## 7. Code Name: Printing String in Reverse
+Algorithm
+Read a string into a character array.
 
-### Theory:
-This code is an excellent introduction to string traversal and manipulation. It manually calculates the string’s length and then uses a loop to print it in reverse. It reinforces array indexing, loop control structures, and the concept of null-terminated strings in C++. This concept is essential in recursive functions, buffer processing, and text formatting.
+Compute the length manually.
 
-### Algorithm:
-1. Input string into a character array.
-2. Determine its length.
-3. Print characters from the end to the start.
+Print characters starting from the last towards the first.
 
-### Output:
+Output
+text
 Enter a string: malicious
 Reversed string: suoicilam
+8. Code: Manual String Concatenation
+Theory
+Here, two character arrays are combined one character at a time, emulating string concatenation without built-in functions. This process builds an understanding of character-wise operations, array bounds, and the necessity of proper null termination in C-style strings.
 
-## 8. Code Name: Concatenation of String
+Algorithm
+Receive two input strings.
 
-### Theory:
-Concatenation involves combining two strings into one. In this program, strings are manually concatenated by traversing character arrays — without using built-in functions. This helps in understanding memory layout, character placement, and the importance of the null character. It's fundamental for string manipulation, data formatting, and dynamic text processing.
+Find the end position of the first string.
 
-### Algorithm:
-1. Input two strings.
-2. Find the end of the first string.
-3. Append the second string character by character.
-4. Display the result.
+Copy characters from second string to the end of the first.
 
-### Output:
+Output the resulting combined string.
+
+Output
+text
 Enter first string: Ninad
 Enter second string: Phatak
 Concatenated string: Ninad Phatak
+9. Code: Palindrome String Check
+Theory
+A palindrome checks for symmetry by comparing characters from the ends toward the center. This fosters skills in indexing, loop control, and logical evaluation—all relevant in text algorithms and interview tasks.
 
+Algorithm
+Input a string.
 
-## 9. Code Name: Checking Whether the String is Palindrome or Not
+Determine length.
 
-### Theory:
-A **palindrome** is a string that reads the same forwards and backwards. This program compares characters from both ends of the string using indexing and a loop, teaching important concepts of string symmetry and condition checking. Palindrome checking is a classic example in string processing and is often asked in interviews and entrance tests due to its simplicity and logic strength.
+Compare characters at mirrored indices, moving inward.
 
-### Algorithm:
-1. Input a string.
-2. Determine its length.
-3. Compare characters from start and end moving inward.
-4. If all match, it's a palindrome.
+Conclude palindrome status based on comparisons.
 
-### Output:
-Enter a string: globalissues
-globalissues is not a palindrome.
-
-Enter a string: racecar
-racecar is a palindrome.
-
-Edit
+Output
+text
 Enter a string: globalissues
 globalissues is not a palindrome.
 
